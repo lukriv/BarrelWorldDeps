@@ -225,7 +225,9 @@ namespace Ogre {
 
 #if OGRE_DEBUG_MODE && (OGRE_PLATFORM == OGRE_PLATFORM_WIN32 || OGRE_PLATFORM == OGRE_PLATFORM_WINRT)
 #   pragma push_macro("NOMINMAX")
+#ifndef __MINGW32__
 #   define NOMINMAX
+#endif
 #   include <windows.h>
 #   pragma pop_macro("NOMINMAX")
 #	define Ogre_OutputCString(str) ::OutputDebugStringA(str)
