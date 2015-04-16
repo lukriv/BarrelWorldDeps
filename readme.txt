@@ -1,0 +1,1 @@
+Compiled with MinGW g++ 4.8.1
