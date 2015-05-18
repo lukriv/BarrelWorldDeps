@@ -324,11 +324,7 @@ public:
     static return_type fromString(const String& str)
     {
         uint64 val = 0;
-	#if defined(__MINGW32__)
-		sscanf(str.c_str(), " %I64u", &val);
-	#else
         sscanf(str.c_str(), " %llu", &val);
-	#endif
 
         return val;
     }
@@ -336,11 +332,8 @@ public:
     static string_return_type toString(pass_type val)
     {
         char buff[64];
-	#if defined(__MINGW32__)
-		snprintf(buff, sizeof(buff), "%I64u", val);
-	#else
         snprintf(buff, sizeof(buff), "%llu", val);
-	#endif
+
         return String(buff);
     }
 };

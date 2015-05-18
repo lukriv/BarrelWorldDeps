@@ -72,8 +72,19 @@ THE SOFTWARE.
 #endif
 #include <d3d9.h>
 #include <d3dx9.h>
-#include <DxErr.h>
+#include <DxErr9.h>
 
+#ifdef UNICODE
+	#define DXGetErrorString DXGetErrorString9W
+#else
+	#define DXGetErrorString DXGetErrorString9A
+#endif 
+
+#ifdef UNICODE
+    #define DXGetErrorDescription DXGetErrorDescription9W
+#else
+    #define DXGetErrorDescription DXGetErrorDescription9A
+#endif 
 
 namespace Ogre
 {
