@@ -1,1 +1,1 @@
-Compiled with MinGW g++ 4.8.1
+Compiled with TDM32 g++ 5.1.0

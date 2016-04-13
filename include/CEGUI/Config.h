@@ -72,7 +72,7 @@ setting CMake options and regenerating, rather than editing directly.
 // std::basic_string allocated according to allocator config
 #define CEGUI_STRING_CLASS_STD_AO 3
 
-#define CEGUI_STRING_CLASS 2
+#define CEGUI_STRING_CLASS 1
 
 //////////////////////////////////////////////////////////////////////////
 // Set this to the default XMLParser to be used.
@@ -85,7 +85,7 @@ setting CMake options and regenerating, rather than editing directly.
 // Set this to the default ImageCodec to be used.
 //////////////////////////////////////////////////////////////////////////
 #ifndef CEGUI_DEFAULT_IMAGE_CODEC
-#   define CEGUI_DEFAULT_IMAGE_CODEC FreeImageImageCodec
+#   define CEGUI_DEFAULT_IMAGE_CODEC SILLYImageCodec
 #endif
 
 //////////////////////////////////////////////////////////////////////////
@@ -138,7 +138,7 @@ setting CMake options and regenerating, rather than editing directly.
 // To disable the use of PCRE (and therefore the validation factilities),
 // comment the following line.  (Attempts to set validation string will throw).
 //////////////////////////////////////////////////////////////////////////
-/* #undef CEGUI_HAS_PCRE_REGEX */
+#define CEGUI_HAS_PCRE_REGEX
 
 //////////////////////////////////////////////////////////////////////////
 // The following controls whether the default logger be (possibly) used.
@@ -190,7 +190,7 @@ setting CMake options and regenerating, rather than editing directly.
 #if defined(_WIN32) || defined(__WIN32__)
 #   define CEGUI_MODULE_DIR "C:/Library/cegui-0.8.4/bin/"
 #else
-#   define CEGUI_MODULE_DIR "C:/Library/cegui-0.8.4/SDK/lib/cegui-0.8/"
+#   define CEGUI_MODULE_DIR "C:/Library/cegui-0.8.4/SDK_tdm32_dev/lib/cegui-0.8/"
 #endif
 
 // This is defined when iconv is expecting a const char** and not a char**

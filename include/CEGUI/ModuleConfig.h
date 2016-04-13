@@ -61,8 +61,8 @@ setting CMake options and regenerating, rather than editing directly.
 //////////////////////////////////////////////////////////////////////////
 #define CEGUI_BUILD_IMAGECODEC_SILLY
 /* #undef CEGUI_BUILD_IMAGECODEC_DEVIL */
-#define CEGUI_BUILD_IMAGECODEC_FREEIMAGE
-#define CEGUI_BUILD_IMAGECODEC_CORONA
+/* #undef CEGUI_BUILD_IMAGECODEC_FREEIMAGE */
+/* #undef CEGUI_BUILD_IMAGECODEC_CORONA */
 /* #undef CEGUI_BUILD_IMAGECODEC_STB */
 #define CEGUI_BUILD_IMAGECODEC_TGA
 /* #undef CEGUI_BUILD_IMAGECODEC_PVR */
@@ -85,7 +85,7 @@ setting CMake options and regenerating, rather than editing directly.
 // not actually include them in the final distribution (or some other
 // event that we do not have control over)
 //////////////////////////////////////////////////////////////////////////
-/* #undef CEGUI_BUILD_LUA_MODULE */
+#define CEGUI_BUILD_LUA_MODULE
 /* #undef CEGUI_BUILD_PYTHON_MODULES */
 
 #endif

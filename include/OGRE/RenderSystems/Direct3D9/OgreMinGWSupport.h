@@ -44,7 +44,7 @@ THE SOFTWARE.
 #endif
 #define UINT8 uint8_t
 #define WINAPI_INLINE inline
-//#define __uuidof(Object) IID_##Object
+#define __uuidof(Object) IID_##Object
 
 #endif
 

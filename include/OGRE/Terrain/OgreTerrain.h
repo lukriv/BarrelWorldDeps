@@ -2141,13 +2141,10 @@ namespace Ogre
 
 
 	};
-
-
+	
+	extern template TerrainGlobalOptions * Singleton< TerrainGlobalOptions >::msSingleton;
 	/** @} */
 	/** @} */
 }
-
-
-
 
 #endif 
