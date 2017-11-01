@@ -50,7 +50,7 @@
 /* #undef HAVE_GCC_SYNC_LOCK_TEST_AND_SET */
 
 #define HAVE_D3D_H TRUE
-/* #undef HAVE_D3D11_H */
+#define HAVE_D3D11_H 1
 #define HAVE_DDRAW_H 1
 #define HAVE_DSOUND_H 1
 #define HAVE_DINPUT_H 1
@@ -77,12 +77,14 @@
 #define HAVE_STDINT_H 1
 #define HAVE_CTYPE_H 1
 #define HAVE_MATH_H 1
-/* #undef HAVE_ICONV_H */
+#define HAVE_ICONV_H 1
 #define HAVE_SIGNAL_H 1
 /* #undef HAVE_ALTIVEC_H */
 /* #undef HAVE_PTHREAD_NP_H */
 /* #undef HAVE_LIBUDEV_H */
 /* #undef HAVE_DBUS_DBUS_H */
+/* #undef HAVE_IBUS_IBUS_H */
+/* #undef HAVE_FCITX_FRONTEND_H */
 
 /* C library functions */
 #define HAVE_MALLOC 1
@@ -156,11 +158,11 @@
 #define HAVE_SQRTF 1
 #define HAVE_TAN 1
 #define HAVE_TANF 1
-/* #undef HAVE_FSEEKO */
+#define HAVE_FSEEKO 1
 #define HAVE_FSEEKO64 1
 /* #undef HAVE_SIGACTION */
 /* #undef HAVE_SA_SIGACTION */
-/* #undef HAVE_SETJMP */
+#define HAVE_SETJMP 1
 #define HAVE_NANOSLEEP 1
 /* #undef HAVE_SYSCONF */
 /* #undef HAVE_SYSCTLBYNAME */
@@ -275,7 +277,7 @@
 /* #undef SDL_VIDEO_DRIVER_ANDROID */
 /* #undef SDL_VIDEO_DRIVER_HAIKU */
 /* #undef SDL_VIDEO_DRIVER_COCOA */
-// Urho3D - needed on iOS platform
+// Urho3D - needed on iOS/tvOS platform
 /* #undef SDL_VIDEO_DRIVER_UIKIT */
 /* #undef SDL_VIDEO_DRIVER_DIRECTFB */
 /* #undef SDL_VIDEO_DRIVER_DIRECTFB_DYNAMIC */
@@ -342,7 +344,7 @@
 /* #undef SDL_POWER_LINUX */
 #define SDL_POWER_WINDOWS 1
 /* #undef SDL_POWER_MACOSX */
-// Urho3D - needed on iOS platform
+// Urho3D - needed on iOS/tvOS platform
 /* #undef SDL_POWER_UIKIT */
 /* #undef SDL_POWER_HAIKU */
 /* #undef SDL_POWER_EMSCRIPTEN */
@@ -361,7 +363,16 @@
 #define SDL_ASSEMBLY_ROUTINES 1
 /* #undef SDL_ALTIVEC_BLITTERS */
 
-// Urho3D - needed on iOS platform
+/* Enable ime support */
+/* #undef SDL_USE_IME */
+
+/* Enable dynamic udev support */
+/* #undef SDL_UDEV_DYNAMIC */
+
+/* Enable dynamic libsamplerate support */
+/* #undef SDL_LIBSAMPLERATE_DYNAMIC */
+
+// Urho3D - needed on iOS/tvOS platform
 /* #undef SDL_IPHONE_KEYBOARD */
 /* #undef SDL_IPHONE_LAUNCHSCREEN */
 /* #undef SDL_IPHONE_MAX_GFORCE */

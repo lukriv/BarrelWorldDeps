@@ -1,5 +1,5 @@
 //
-// Copyright (c) 2008-2016 the Urho3D project.
+// Copyright (c) 2008-2017 the Urho3D project.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -63,9 +63,10 @@
 #  define URHO3D_DEPRECATED_NO_EXPORT URHO3D_NO_EXPORT URHO3D_DEPRECATED
 #endif
 
-#define DEFINE_NO_DEPRECATED 0
-#if DEFINE_NO_DEPRECATED
-# define URHO3D_NO_DEPRECATED
+#if 0 /* DEFINE_NO_DEPRECATED */
+#  ifndef URHO3D_NO_DEPRECATED
+#    define URHO3D_NO_DEPRECATED
+#  endif
 #endif
 
 #define NONSCRIPTABLE 
