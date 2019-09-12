@@ -59,7 +59,7 @@
 # endif
 # include <string.h>
 #endif
-#if defined(HAVE_STRINGS_H) && (!defined(WIN32) || defined(__MINGW32__))
+#ifdef HAVE_STRINGS_H
 # include <strings.h>
 #endif
 #if defined(HAVE_INTTYPES_H)
